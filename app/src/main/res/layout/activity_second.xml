@@ -4,44 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="184dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:onClick="GoActifity2"
-        android:text="Go Actifity2"
+        android:onClick="nameÜbergeben"
+        android:text="Fertig"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/resultTV"
-        android:layout_width="182dp"
-        android:layout_height="92dp"
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="132dp"
-        android:textSize="18sp"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="Namen eingeben"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="130dp"
-        android:layout_height="93dp"
+        android:id="@+id/editText2"
+        android:layout_width="125dp"
+        android:layout_height="49dp"
         android:layout_marginEnd="8dp"
-        android:cursorVisible="false"
+        android:layout_marginTop="96dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name:; "
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/resultTV"
-        tools:layout_editor_absoluteY="132dp" />
+        android:text="Name:"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
